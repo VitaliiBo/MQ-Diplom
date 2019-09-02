@@ -137,27 +137,28 @@ body {
   background: url('../img/footballer_320.png') no-repeat center;
   min-width: 320px;
   height: 281px;
-  margin: auto;
+  margin: 95px auto auto 0;
 }
 
 .connections {
   box-sizing: border-box;
   margin-top: 234px;
   padding-top: 83px;
+  padding-bottom: 50px;
   background-color: #fafafa;
 }
 
-.connections-title {
+.connections-title , .collaboration-title {
   display: flex;
   flex-wrap: wrap;
 }
 
-.connections-title span {
+.connections-title span , .collaboration-title span {
   font-size: 14px;
   font-weight: bold;
 }
 
-.connections-title span::after {
+.connections-title span::after , .collaboration-title span::after {
   content: '';
   display: block;
   width: 15px;
@@ -165,7 +166,7 @@ body {
   background-color: #5e42b0;
 }
 
-.connections-title h3 {
+.connections-title h3 , .collaboration-title h3 {
   line-height: 26px;
   font-size: 23px;
   text-transform: uppercase;
@@ -174,8 +175,15 @@ body {
   margin-left: 10px;
 }
 
-.connections-text {
+.connections-text , .collaboration-text {
   font-size: 15px;
-
+  text-align: justify;
   margin-top: 27px;
+}
+
+.collaboration {
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 49px;
+  background-color: #f5f4f9;
 }
