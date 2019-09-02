@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #000;
+}
+
+.link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  min-width: 320px;
+  height: 100vh;
+  min-height: 568px;
+  background-color: #121134;
+  background: url('../img/header_bg_320.jpg') no-repeat;
+  background-size: cover;
+  background-position: 50% 0;
+}
+
+.wrapper {
+  padding: 0 20px;
+}
+
+.header-logo {
+  display: block;
+  width: 133px;
+  margin: 0 auto;
+  padding-top: 33px;
+  fill: #fff;
+}
+
+.header-title {
+
+  margin-top: 137px;
+}
+
+.header-title h2:nth-child(1) {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-title h2:nth-child(2) {
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #fff;
+
+  width: 217px;
+  height: 70px;
+  margin-top: 31px;
+  margin-left: auto;
+  padding-left: 67px;
+}
+
+.header-download {
+  margin: 16vmax auto 0;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+  height: 35px;
+  margin-top: 15px;
+  background-color: #5e42b0;
+  border-radius: 25px;
+}
+
+.apple-logo {
+  fill: #fff;
+  width: 20px;
+}
+
+.google-logo {
+  fill: #fff;
+  width: 22px;
+}
+
+.button-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.button-text span {
+  font-size: 8px;
+}
+
+.button-text span:nth-child(2) {
+  font-weight: bold;
+}
+
+.google-button {
+  display: flex;
+  width: 105px;
+}
+
+.main {
+  min-width: 320px;
+  background-color: #fff;
+}
+
+.athlets {
+  background-color: #fff;
+  position: relative;
+}
+
+.athlets h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+
+.athlets::before {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10px;
+  content: '';
+  background: url('../img/footballer_320.png') no-repeat center;
+  min-width: 320px;
+  height: 281px;
+  margin: auto;
+}
+
+.connections {
+  box-sizing: border-box;
+  margin-top: 234px;
+  padding-top: 83px;
+  background-color: #fafafa;
+}
+
+.connections-title {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.connections-title span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.connections-title span::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 4px;
+  background-color: #5e42b0;
+}
+
+.connections-title h3 {
+  line-height: 26px;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #c1c1c1;
+
+  margin-left: 10px;
+}
+
+.connections-text {
+  font-size: 15px;
+
+  margin-top: 27px;
+}
