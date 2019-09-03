@@ -113,6 +113,8 @@ body {
   background-color: #fff;
 }
 
+/*~~~~~~~~~ ATHLETS ~~~~~~~~~*/
+
 .athlets {
   background-color: #fff;
   position: relative;
@@ -140,7 +142,7 @@ body {
   margin: 95px auto auto 0;
 }
 
-.connections {
+.connection {
   box-sizing: border-box;
   margin-top: 234px;
   padding-top: 83px;
@@ -148,25 +150,26 @@ body {
   background-color: #fafafa;
 }
 
-.connections-title , .collaboration-title {
+.connection-title , .collaboration-title {
   display: flex;
   flex-wrap: wrap;
 }
 
-.connections-title span , .collaboration-title span {
+.connection-title span , .collaboration-title span , .growth-title span {
   font-size: 14px;
   font-weight: bold;
 }
 
-.connections-title span::after , .collaboration-title span::after {
+.connection-title span::after , .collaboration-title span::after {
   content: '';
   display: block;
   width: 15px;
   height: 4px;
+  border-radius: 2px;
   background-color: #5e42b0;
 }
 
-.connections-title h3 , .collaboration-title h3 {
+.connection-title h3 , .collaboration-title h3 , .growth h3 {
   line-height: 26px;
   font-size: 23px;
   text-transform: uppercase;
@@ -175,7 +178,7 @@ body {
   margin-left: 10px;
 }
 
-.connections-text , .collaboration-text {
+.connection-text , .collaboration-text , .growth-text {
   font-size: 15px;
   text-align: justify;
   margin-top: 27px;
@@ -186,4 +189,57 @@ body {
   padding-top: 60px;
   padding-bottom: 49px;
   background-color: #f5f4f9;
+}
+
+.growth {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background-color: #5e42b0;
+}
+
+.growth-title {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.growth-title span::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.growth-text {
+  color: #fff;
+}
+
+/*~~~~~~~~~~~~ PLAYERS ~~~~~~~~~*/
+
+.players {
+  position: relative;
+}
+
+.players h2 {
+  font-weight: bold;
+  font-size: 50px;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  padding-top: 18px;
+}
+
+.players::before {
+  display: flex;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: url('../img/basketballer_320.png') no-repeat center;
+  min-width: 302px;
+  height: 248px;
+  margin: 95px auto auto 0;
 }
