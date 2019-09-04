@@ -243,3 +243,107 @@ body {
   height: 248px;
   margin: 95px auto auto 0;
 }
+
+.players-growth {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  background-color: #090c35;
+}
+
+.players-growth-title {
+  display: flex;
+  flex-wrap: wrap;
+  color: #8765dd;
+}
+
+.players-growth-title span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.players-growth h3 {
+  line-height: 26px;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #c1c1c1;
+
+  margin-left: 10px;
+}
+
+.players-growth-title span::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.players-growth-text {
+  font-size: 15px;
+  text-align: left;
+  margin-top: 27px;
+  color: #fff;
+}
+
+/*~~~~~~~~~BE ACTIVE~~~~~~~~~*/
+
+.be-active-bg {
+  height: 351px;
+  background: url('../img/be-active_320.jpg') no-repeat center / cover;
+}
+
+.be-active-wrapper , .find-contact-wrapper {
+  position: relative;
+  bottom: 58px;
+}
+
+.be-active-title span , .find-contact-title span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  width: 70px;
+  height: 70px;
+  background-color: #5e42b0;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.be-active-title span::after , .find-contact-title span::after {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #fff;
+  opacity: 0.302;
+}
+
+.be-active-title h2 , .find-contact-title h2 {
+  margin-top: 19px;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #e7e7e7;
+}
+
+.be-active-text {
+  width: 80%;
+  margin-top: 20px;
+}
+
+/*~~~~~~~~~ FIND CONTACT~~~~~~~~~*/
+
+.find-contact-bg {
+  height: 351px;
+  background: url('../img/find-contact-bg_320.jpg') no-repeat center / cover;
+}
+
+.find-contact-text {
+  font-size: 16px;
+  margin-top: 20px;
+}
