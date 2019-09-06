@@ -13,6 +13,31 @@ body {
   color: #fff;
 }
 
+/*~~~~~~~~~~~ MEDIA ~~~~~~~~~~*/
+@media (min-width: 640px) {
+  a.header-logo {
+    width: 205px;
+    margin: 39px auto 0;
+  }
+
+  div.wrapper {
+    padding: 1px 58px;
+  }
+
+  div.header-title {
+    margin-top: 178px;
+  }
+
+  div.header-title h2:nth-child(1) {
+    font-size: 64px;
+
+    margin-left: 27px;
+  }
+}
+
+
+/*~~~~~~~~~~ HEADER ~~~~~~~~~*/
+
 .header {
   min-width: 320px;
   height: 100vh;
@@ -24,19 +49,17 @@ body {
 }
 
 .wrapper {
-  padding: 0 20px;
+  padding: 1px 20px;
 }
 
 .header-logo {
   display: block;
   width: 133px;
-  margin: 0 auto;
-  padding-top: 33px;
+  margin: 32px auto 0;
   fill: #fff;
 }
 
 .header-title {
-
   margin-top: 137px;
 }
 
@@ -63,7 +86,7 @@ body {
 }
 
 .header-download {
-  margin: 16vmax auto 0;
+  margin: 85px auto 0;
 }
 
 .button {
@@ -293,12 +316,12 @@ body {
   background: url('../img/be-active_320.jpg') no-repeat center / cover;
 }
 
-.be-active-wrapper , .find-contact-wrapper {
+.be-active-wrapper , .find-contact-wrapper , .work-it-wrapper {
   position: relative;
   bottom: 58px;
 }
 
-.be-active-title span , .find-contact-title span {
+.be-active-title span , .find-contact-title span , .work-it-title span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -314,7 +337,7 @@ body {
   color: #fff;
 }
 
-.be-active-title span::after , .find-contact-title span::after {
+.be-active-title span::after , .find-contact-title span::after , .work-it-title span::after {
   content: '';
   display: block;
   width: 15px;
@@ -324,7 +347,7 @@ body {
   opacity: 0.302;
 }
 
-.be-active-title h2 , .find-contact-title h2 {
+.be-active-title h2 , .find-contact-title h2 , .work-it-title h2 {
   margin-top: 19px;
   font-size: 28px;
   text-transform: uppercase;
@@ -336,7 +359,7 @@ body {
   margin-top: 20px;
 }
 
-/*~~~~~~~~~ FIND CONTACT~~~~~~~~~*/
+/*~~~~~~~~~ FIND CONTACT ~~~~~~~~~*/
 
 .find-contact-bg {
   height: 351px;
@@ -346,4 +369,63 @@ body {
 .find-contact-text {
   font-size: 16px;
   margin-top: 20px;
+}
+
+/*~~~~~~~~~~ WORK IT ~~~~~~~~~~~*/
+
+.work-it-bg {
+  height: 351px;
+  background: url('../img/work-it_320.jpg') no-repeat center / cover;
+}
+
+.work-it-text {
+  font-size: 16px;
+  margin-top: 19px;
+}
+
+/*~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~*/
+
+.footer {
+  min-width: 320px;
+  height: 100vh;
+  min-height: 568px;
+  box-sizing: border-box;
+
+  background-color: #121134;
+  background: url('../img/footer-bg_320.jpg') no-repeat center / cover;
+}
+
+.footer-app-logo {
+  width: 72px;
+  height: 74px;
+  margin: 99px auto 0;
+}
+
+.footer-title {
+  margin-top: 43px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.footer-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  word-spacing: 13px;
+}
+
+.footer-title span {
+  font-size: 14px;
+  color: #9b8ec1;
+}
+
+.footer-logo {
+  display: block;
+  width: 133px;
+  margin: 75px auto 0;
+  fill: #fff;
+}
+
+.footer-download {
+  margin: 77px auto 0;
 }
