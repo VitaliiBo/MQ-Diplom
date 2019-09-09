@@ -40,8 +40,10 @@ body {
 
 .header {
   min-width: 320px;
-  height: 100vh;
   min-height: 568px;
+  padding-top: 33px;
+  padding-bottom: 73px;
+  box-sizing: border-box;
   background-color: #121134;
   background: url('../img/header_bg_320.jpg') no-repeat;
   background-size: cover;
@@ -49,21 +51,23 @@ body {
 }
 
 .wrapper {
-  padding: 1px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .header-logo {
   display: block;
   width: 133px;
-  margin: 32px auto 0;
+  height: 36px;
+  margin: 0 auto;
   fill: #fff;
 }
 
 .header-title {
-  margin-top: 137px;
+  margin-top: 127px;
 }
 
-.header-title h2:nth-child(1) {
+.header-title h2 {
   font-family: 'Open Sans';
   font-weight: bold;
   font-size: 28px;
@@ -71,16 +75,12 @@ body {
   color: #fff;
 }
 
-.header-title h2:nth-child(2) {
-  font-family: 'Open Sans';
-  font-weight: bold;
-  font-size: 28px;
-  text-transform: uppercase;
-  color: #fff;
+.header-title span {
+  display: block;
 
   width: 217px;
   height: 70px;
-  margin-top: 31px;
+  margin-top: 21px;
   margin-left: auto;
   padding-left: 67px;
 }
@@ -116,13 +116,10 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-}
-
-.button-text span {
   font-size: 8px;
 }
 
-.button-text span:nth-child(2) {
+.button-text span {
   font-weight: bold;
 }
 
@@ -166,7 +163,6 @@ body {
 }
 
 .connection {
-  box-sizing: border-box;
   margin-top: 234px;
   padding-top: 83px;
   padding-bottom: 50px;
@@ -178,12 +174,17 @@ body {
   flex-wrap: wrap;
 }
 
-.connection-title span , .collaboration-title span , .growth-title span {
+.connection-title sup , .collaboration-title sup , .growth-title sup {
   font-size: 14px;
   font-weight: bold;
+  line-height: 16px;
+  color: #000;
+
+  margin-top: 3px;
+  margin-right: 10px;
 }
 
-.connection-title span::after , .collaboration-title span::after {
+.connection-title sup::after , .collaboration-title sup::after {
   content: '';
   display: block;
   width: 15px;
@@ -193,6 +194,7 @@ body {
 }
 
 .connection-title h3 , .collaboration-title h3 , .growth h3 {
+  display: flex;
   line-height: 26px;
   font-size: 23px;
   text-transform: uppercase;
@@ -226,7 +228,7 @@ body {
 
 }
 
-.growth-title span::after {
+.growth-title sup::after {
   content: '';
   display: block;
   width: 15px;
@@ -274,17 +276,23 @@ body {
 }
 
 .players-growth-title {
-  display: flex;
-  flex-wrap: wrap;
+
   color: #8765dd;
 }
 
-.players-growth-title span {
+.players-growth-title sup {
   font-size: 14px;
   font-weight: bold;
+  line-height: 16px;
+  color: #5e42b0;
+
+  margin-top: 3px;
+  margin-right: 10px;
 }
 
 .players-growth h3 {
+  display: flex;
+  flex-wrap: wrap;
   line-height: 26px;
   font-size: 23px;
   text-transform: uppercase;
@@ -293,7 +301,7 @@ body {
   margin-left: 10px;
 }
 
-.players-growth-title span::after {
+.players-growth-title sup::after {
   content: '';
   display: block;
   width: 15px;
@@ -398,7 +406,7 @@ body {
 .footer-app-logo {
   width: 72px;
   height: 74px;
-  margin: 99px auto 0;
+  margin: 0 auto;
 }
 
 .footer-title {
@@ -416,6 +424,8 @@ body {
 
 .footer-title span {
   font-size: 14px;
+  font-weight: 400;
+  word-spacing: normal;
   color: #9b8ec1;
 }
 
