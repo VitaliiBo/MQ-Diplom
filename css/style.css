@@ -41,15 +41,32 @@ body {
 /*~~~~~~~~~~ HEADER ~~~~~~~~~*/
 
 .header {
+  position: relative;
   min-width: 320px;
   min-height: 568px;
   padding-top: 33px;
   padding-bottom: 73px;
   box-sizing: border-box;
-  background-color: #121134;
-  background: url('../img/header_bg_320.jpg') no-repeat;
+  background-color: #0a0e34;
+  background: url('../img/football_320.jpg') no-repeat;
   background-size: cover;
   background-position: 50% 0;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0a0e34;
+  opacity: 0.9;
+}
+
+.header-box {
+  position: relative;
+  z-index: 10;
 }
 
 .wrapper {
@@ -63,6 +80,7 @@ body {
   height: 36px;
   margin: 0 auto;
   fill: #fff;
+  z-index: 3;
 }
 
 .header-title {
@@ -318,15 +336,20 @@ body {
 
 /*~~~~~~~~~BE ACTIVE~~~~~~~~~*/
 
+.be-active {
+  position: relative;
+}
+
 .be-active-bg {
   height: 351px;
   background: url('../img/be-active_320.jpg') no-repeat center / cover;
 }
 
+/*
 .be-active-wrapper , .find-contact-wrapper , .work-it-wrapper {
-  position: relative;
-  bottom: 58px;
+
 }
+*/
 
 .be-active-title span , .find-contact-title span , .work-it-title span {
   display: flex;
@@ -334,7 +357,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  position: relative;
+  position: absolute;
+  top: 293px;
   width: 70px;
   height: 70px;
   background-color: #5e42b0;
@@ -364,9 +388,14 @@ body {
 .be-active-text {
   width: 80%;
   margin-top: 20px;
+  padding-bottom: 76px;
 }
 
 /*~~~~~~~~~ FIND CONTACT ~~~~~~~~~*/
+
+.find-contact {
+  position: relative;
+}
 
 .find-contact-bg {
   height: 351px;
@@ -376,9 +405,14 @@ body {
 .find-contact-text {
   font-size: 16px;
   margin-top: 20px;
+  padding-bottom: 76px;
 }
 
 /*~~~~~~~~~~ WORK IT ~~~~~~~~~~~*/
+
+.work-it {
+  position: relative;
+}
 
 .work-it-bg {
   height: 351px;
@@ -388,24 +422,54 @@ body {
 .work-it-text {
   font-size: 16px;
   margin-top: 19px;
+  padding-bottom: 76px;
 }
 
 /*~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~*/
 
 .footer {
   min-width: 320px;
-  height: 100vh;
   min-height: 568px;
   box-sizing: border-box;
+  padding-top: 99px;
+  position: relative;
 
-  background-color: #121134;
-  background: url('../img/footer-bg_320.jpg') no-repeat center / cover;
+  background-color: #0a0e34;
+  background: url('../img/game_767.jpg') no-repeat center / cover;
+}
+
+.footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0a0e34;
+  opacity: 0.9;
+}
+
+.footer-box {
+  position: relative;
+  z-index: 10;
 }
 
 .footer-app-logo {
+  display: flex;
   width: 72px;
   height: 74px;
+  border-radius: 15px ;
+  background: #50329c;
+  background: linear-gradient(to top, #50329c, #7751db);
   margin: 0 auto;
+  justify-content: center;
+}
+
+.footer-app-logo svg {
+  width: 57px;
+  height: 47px;
+  fill: #fff;
+  align-self: center;
 }
 
 .footer-title {
@@ -422,6 +486,7 @@ body {
 }
 
 .footer-title span {
+  display: block;
   font-size: 14px;
   font-weight: 400;
   word-spacing: normal;
@@ -437,4 +502,87 @@ body {
 
 .footer-download {
   margin: 77px auto 0;
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .header {
+    min-height: 960px;
+    padding-bottom: 91px;
+    box-sizing: border-box;
+  }
+
+  .header-logo {
+    width: 205px;
+    height: 56px;
+  }
+
+  .header-title {
+    margin-top: 173px;
+  }
+
+  .header-title h2 {
+    font-size: 64px;
+    padding-left: 76px;
+  }
+
+  .header-title span {
+    display: block;
+    max-width: 506px;
+    margin-top: 21px;
+    margin-left: auto;
+  }
+
+  .header-download, .footer-download {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 296px;
+  }
+
+  .button {
+    width: 310px;
+    height: 78px;
+    border-radius: 78px;
+  }
+
+  .button:hover {
+    box-sizing: border-box;
+    border: 5px solid #7966b0;
+  }
+
+  .button:nth-child(2n+2) {
+      margin-left: 30px;
+  }
+
+  .button-text {
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 23px;
+    line-height: 16px
+  }
+
+  .google-button {
+    width: 200px;
+  }
+
+  .apple-logo {
+    width: 46px;
+  }
+
+  .google-logo {
+    width: 45px;
+  }
+
+  .connection, .collaboration, .growth {
+    display: flex;
+  }
+
+  .connection-box, .collaboration-box, .growth-box {
+    width: 442px;
+    margin-left: auto;
+  }
 }
