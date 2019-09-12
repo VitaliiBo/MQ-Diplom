@@ -13,31 +13,6 @@ body {
   color: #fff;
 }
 
-/*~~~~~~~~~~~ MEDIA ~~~~~~~~~~*/
-/*
-@media (min-width: 640px) {
-  a.header-logo {
-    width: 205px;
-    margin: 39px auto 0;
-  }
-
-  div.wrapper {
-    padding: 1px 58px;
-  }
-
-  div.header-title {
-    margin-top: 178px;
-  }
-
-  div.header-title h2:nth-child(1) {
-    font-size: 64px;
-
-    margin-left: 27px;
-  }
-}
-*/
-
-
 /*~~~~~~~~~~ HEADER ~~~~~~~~~*/
 
 .header {
@@ -162,6 +137,9 @@ body {
   font-size: 50px;
   color: #e7e7e7;
   text-transform: uppercase;
+}
+
+.athlets-title {
   padding-top: 18px;
 }
 
@@ -264,7 +242,7 @@ body {
   position: relative;
 }
 
-.players h2 {
+.players-title h2 {
   font-weight: bold;
   font-size: 50px;
   color: #e7e7e7;
@@ -485,7 +463,7 @@ body {
   word-spacing: 13px;
 }
 
-.footer-title span {
+.footer-title p {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -547,6 +525,7 @@ body {
     width: 310px;
     height: 78px;
     border-radius: 78px;
+    margin-top: 0;
   }
 
   .button:hover {
@@ -576,13 +555,132 @@ body {
   .google-logo {
     width: 45px;
   }
+/*~~~~~~~~~~~~~~ ATHLETS ~~~~~~~~~~~~~*/
+  .athlets .connection {
+    margin-top: 60px;
+    background-color: #fff;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .athlets-title {
+    padding-top: 0;
+  }
+
+  .athlets .collaboration {
+    padding-top: 35px;
+  }
+
+  .connection-title h3, .collaboration-title h3, .growth-title h3, .players-growth-title h3 {
+    font-size: 32px;
+    margin-left: 0;
+    letter-spacing: 2px;
+  }
+
+  .connection-title sup, .collaboration-title sup, .growth-title sup, .players-growth-title sup {
+    font-size: 18px;
+    margin-top: 0;
+  }
+
+  .connection-title sup::after, .collaboration-title sup::after, .growth-title sup::after, .players-growth-title sup::after {
+    width: 19px;
+    height: 5px;
+    margin-top: 5px;
+  }
+
+  .connection-text, .collaboration-text, .growth-text {
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 26px;
+  }
+
+  .growth-text, .players-growth-text {
+    font-weight: 300;
+  }
+
+  .growth {
+    padding-top: 40px;
+    padding-bottom: 33px;
+  }
 
   .connection, .collaboration, .growth {
     display: flex;
   }
 
-  .connection-box, .collaboration-box, .growth-box {
+  .athlets .connection-box, .athlets .collaboration-box, .growth-box {
     width: 442px;
     margin-left: auto;
+  }
+
+  .athlets {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    padding-top: 80px;
+  }
+
+  .athlets::before {
+    background-image: url('../img/footballer_497.png');
+    width: 497px;
+    height: 699px;
+    top: 10px;
+    left: -160px;
+  }
+
+  .athlets-title h2 {
+    font-size: 80px;
+    line-height: 64px;
+    width: 442px;
+    margin-left: auto;
+  }
+  /*~~~~~~~~~~~~~~ PLAYERS ~~~~~~~~~~~~~~*/
+  .players {
+    padding-top: 85px;
+  }
+
+  .players::before {
+    background-image: url('../img/basketballer_436.png');
+    width: 436px;
+    height: 565px;
+    margin-left: auto;
+    margin-right: 0;
+    top: -50px;
+  }
+
+  .players-title h2 {
+    font-size: 80px;
+    line-height: 64px;
+    padding-top: 0;
+  }
+
+  .players .connection {
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 35px;
+    background-color: #fff;
+  }
+
+  .players .connection-box {
+    width: 400px;
+  }
+
+  .players .collaboration-box, .players-growth-box {
+    width: 440px;
+  }
+
+  .players .connection-box, .players .collaboration-box, .players-growth-box {
+    margin-right: auto;
+  }
+
+  .players .collaboration, .players-growth {
+    padding-top: 42px;
+    padding-bottom: 33px;
+  }
+
+  .players-growth-text  {
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 28px;
   }
 }
