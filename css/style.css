@@ -318,16 +318,19 @@ body {
   position: relative;
 }
 
-.be-active-bg {
-  height: 351px;
-  background: url('../img/be-active_320.jpg') no-repeat center / cover;
+.be-active-img-box {
+  max-height: 480px;
+  overflow: hidden;
 }
 
-/*
+.be-active-img-box img {
+  width: 100%;
+}
+
+
 .be-active-wrapper , .find-contact-wrapper , .work-it-wrapper {
-
+  position: relative;
 }
-*/
 
 .be-active-title span , .find-contact-title span , .work-it-title span {
   display: flex;
@@ -336,7 +339,7 @@ body {
   align-items: center;
 
   position: absolute;
-  top: 293px;
+  top: -85px;
   width: 70px;
   height: 70px;
   background-color: #5e42b0;
@@ -682,5 +685,81 @@ body {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 28px;
+  }
+  /*~~~~~~~~~~~~~~~~ BE ACTIVE ~~~~~~~~~~~~~~~~*/
+
+  .be-active-img-box, .find-contact-img-box, .work-it-img-box {
+    max-height: 584px;
+  }
+
+  .be-active-title span , .find-contact-title span , .work-it-title span {
+
+    top: -155px;
+    width: 116px;
+    height: 116px;
+
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+
+  .be-active-title span::after , .find-contact-title span::after , .work-it-title span::after {
+    width: 28px;
+  }
+
+  .be-active-title h2, .find-contact-title h2, .work-it-title h2 {
+    font-size: 80px;
+    margin-top: 71px;
+  }
+
+  .be-active-text, .find-contact-text, .work-it-text {
+    width: 86%;
+    font-size: 24px;
+  }
+  /*~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~*/
+
+  .footer {
+    padding-top: 126px;
+    padding-bottom: 23px;
+  }
+
+  .footer-app-logo {
+    width: 130px;
+    height: 137px;
+    border-radius: 30px;
+  }
+
+  .footer-app-logo svg {
+    width: 104px;
+    height: 85px;
+  }
+
+  .footer-title {
+    margin-top: 57px;
+  }
+
+  .footer-title h2 {
+    font-size: 80px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+  }
+
+  .footer-title p {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .footer-download {
+    margin-top: 267px;
+    justify-content: center;
+  }
+
+  .button {
+    width: 40%;
+  }
+
+  .footer-logo {
+    width: 205px;
+    height: 56px;
+    margin-top: 60px;
   }
 }
