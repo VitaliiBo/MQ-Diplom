@@ -90,6 +90,7 @@ body {
   margin-top: 15px;
   background-color: #5e42b0;
   border-radius: 25px;
+  box-shadow: 0px 16px 24px 0px rgba(10, 14, 52, 0.4);
 }
 
 .apple-logo {
@@ -502,6 +503,7 @@ body {
     min-height: 960px;
     padding-bottom: 91px;
     box-sizing: border-box;
+    background-image: url('../img/football_767.jpg');
   }
 
   .header-logo {
@@ -732,6 +734,7 @@ body {
   .footer {
     padding-top: 126px;
     padding-bottom: 23px;
+    background-image: url('../img/game_1280.jpg');
   }
 
   .footer-app-logo {
@@ -769,9 +772,294 @@ body {
     width: 40%;
   }
 
+
   .footer-logo {
     width: 205px;
     height: 56px;
     margin-top: 60px;
   }
+}
+
+@media (min-width: 961px) {
+  .wrapper {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+
+  .header {
+    padding-bottom: 110px;
+    background-image: url('../img/football_1280.jpg');
+  }
+
+  .header-logo {
+    width: 191px;
+    height: 52px;
+  }
+
+  .header-title {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 280px;
+  }
+
+  .header-title h2 {
+    width: 100%;
+    font-size: 90px;
+    padding-left: 0;
+    line-height: 100px;
+    letter-spacing: 10px;
+  }
+
+  .header-title span {
+    max-width: 1200px;
+    min-height: 244px;
+    flex-basis: 800px;
+    text-align: right;
+    margin-top: 0;
+  }
+
+  .header-download {
+    margin-top: 100px;
+    justify-content: center;
+  }
+
+  .button {
+    max-width: 310px;
+  }
+
+  .button:nth-child(2n+2) {
+    margin-left: 50px;
+  }
+
+  /*~~~~~~~~~~~~~~~~~~~~~ ATHLETS ~~~~~~~~~~~~~~~~~*/
+  .athlets, .players {
+    padding-top: 116px;
+  }
+
+  .players {
+    overflow: hidden;
+  }
+
+  .athlets-title h2 {
+    min-width: 700px;
+  }
+
+   .connection-box, .collaboration-box, .growth-box, .players-growth-box {
+    min-width: 700px;
+    max-width: 1920px;
+    margin-right: 0;
+  }
+
+  .connection-title h3, .collaboration-title h3, .growth-title h3, .players-growth-title h3 {
+    font-size: 36px;
+  }
+
+  .connection-text, .collaboration-text, .growth-text, .players-growth-text {
+    font-size: 18px;
+  }
+
+  .athlets::before {
+    background-image: url(../img/footballer_566.png);
+    width: 566px;
+    height: 908px;
+    top: 27px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 922px 0 auto;
+
+    transition: 1s;
+  }
+
+  .connection, .collaboration, .growth {
+    justify-content: center;
+  }
+
+  .athlets .connection {
+    margin-top: 100px;
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  .athlets .collaboration {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .growth, .players-growth {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .players .connection {
+    margin-top: 115px;
+    padding-bottom: 50px;
+    padding-top: 0;
+  }
+
+  .players::before {
+    background-image: url(../img/basketballer_991.png);
+    width: 991px;
+    height: 815px;
+    margin: 0 auto 0 39%;
+    top: 15px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .players .collaboration {
+    padding-top: 60px;
+    padding-bottom: 84px;
+  }
+
+  /*~~~~~~~~~~~~~~~~~~~~~ BE ACTIVE ~~~~~~~~~~~~~~~~~~~~*/
+
+  .be-active, .find-contact, .work-it {
+    display: flex;
+    justify-content: center;
+    height: 730px;
+    max-width: 1920px;
+    margin: 0 auto 0;
+  }
+
+  .be-active-img-box, .find-contact-img-box, .work-it-img-box {
+    width: 50%;
+    height: 100%;
+    position: relative;
+  }
+  .be-active-img-box img, .work-it-img-box img {
+    position: absolute;
+    min-width: 1024px;
+    height: 100%;
+    right: 0;
+  }
+
+  .find-contact-img-box {
+    order: 2;
+  }
+
+  .find-contact-img-box img{
+    position: absolute;
+    min-width: 1024px;
+    height: 100%;
+    left: 0;
+  }
+
+   div.be-active-wrapper.wrapper , div.find-contact-wrapper.wrapper, div.work-it-wrapper.wrapper {
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 122px;
+    padding-right: 9%;
+    padding-top: 261px;
+  }
+
+  div.find-contact-wrapper.wrapper {
+   box-sizing: border-box;
+   width: 50%;
+   padding-right: 122px;
+   padding-left: 9%;
+   padding-top: 261px;
+ }
+
+  .be-active-title h2, .find-contact-title h2, .work-it-title h2 {
+    margin-top: 0;
+  }
+
+  .be-active-title span, .find-contact-title span, .work-it-title span {
+    width: 168px;
+    height: 155px;
+    top: 0;
+    left: -89px;
+    right: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .find-contact-title span {
+    left: auto;
+    right: -89px;
+  }
+
+  /*~~~~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~~~~~*/
+    .footer {
+      padding-top: 229px;
+      padding-bottom: 52px;
+      background-image: url('../img/game_1920.jpg');
+    }
+
+    .footer-apptitle-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-app-logo, .footer-title {
+      margin: 0;
+    }
+
+    .footer-title {
+      text-align: left;
+      margin-left: 30px;
+      margin-top: 10px;
+      line-height: 60px;
+    }
+
+    .footer-title p {
+      font-size: 30px;
+      margin-left: 5px;
+    }
+
+    .footer-download {
+      margin-top: 151px;
+    }
+
+    .footer-logo {
+      margin-top: 262px;
+      width: 191px;
+      height: 52px;
+    }
+
+  }
+
+  /*~~~~~~~~~~~~~~~~~~ AFTER 1920px CONTENT CENTER ~~~~~~~~~~~~~~~~~~~*/
+
+  .athlets-title div {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+
+  .athlets .connection-title, .athlets .collaboration-title, .athlets .growth-title {
+    max-width: 700px;
+    margin-left: auto;
+  }
+
+  .connection-text, .collaboration-text, .growth-text, .players-growth-text {
+    font-size: 18px;
+    max-width: 700px;
+  }
+
+  .athlets .growth-text, .athlets .collaboration-text, .athlets .connection-text {
+    margin-left: auto;
+  }
+
+  .connection-box, .collaboration-box, .growth-box, .players-growth-box, .players-title h2 {
+    max-width: 1920px;
+    flex-grow: 1;
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .players .connection-box, .players .collaboration-box, .players-growth-box, .players-title h2 {
+    margin: 0 auto;
+  }
+
+
+@media (min-width: 2100px) {
+  .athlets::before {
+    margin: 0 1522px 0 auto;
+    transition: 1s;
+  }
+
 }
