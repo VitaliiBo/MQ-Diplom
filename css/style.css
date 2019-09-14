@@ -1021,8 +1021,6 @@ body {
       height: 52px;
     }
 
-  }
-
   /*~~~~~~~~~~~~~~~~~~ AFTER 1920px CONTENT CENTER ~~~~~~~~~~~~~~~~~~~*/
 
   .athlets-title div {
@@ -1054,7 +1052,7 @@ body {
   .players .connection-box, .players .collaboration-box, .players-growth-box, .players-title h2 {
     margin: 0 auto;
   }
-
+}
 
 @media (min-width: 2100px) {
   .athlets::before {
