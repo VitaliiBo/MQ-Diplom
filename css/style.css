@@ -319,12 +319,13 @@ body {
 }
 
 .be-active-img-box {
-  max-height: 480px;
+  height: 351px;
+
   overflow: hidden;
 }
 
 .be-active-img-box img {
-  width: 100%;
+  width: 100%
 }
 
 
@@ -485,7 +486,7 @@ body {
   margin: 77px auto 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 641px) {
   .wrapper {
     padding-left: 32px;
     padding-right: 32px;
@@ -689,7 +690,11 @@ body {
   /*~~~~~~~~~~~~~~~~ BE ACTIVE ~~~~~~~~~~~~~~~~*/
 
   .be-active-img-box, .find-contact-img-box, .work-it-img-box {
-    max-height: 584px;
+    height: 584px;
+  }
+
+  .be-active-img-box img {
+    width: auto;
   }
 
   .be-active-title span , .find-contact-title span , .work-it-title span {
@@ -713,6 +718,7 @@ body {
 
   .be-active-text, .find-contact-text, .work-it-text {
     width: 86%;
+    height: 66px;
     font-size: 24px;
   }
   /*~~~~~~~~~~~~~~~~ FOOTER ~~~~~~~~~~~~~~~~*/
