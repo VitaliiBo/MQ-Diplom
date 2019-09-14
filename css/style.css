@@ -314,18 +314,18 @@ body {
 
 /*~~~~~~~~~BE ACTIVE~~~~~~~~~*/
 
-.be-active {
+.be-active , .find-contact , .work-it {
   position: relative;
 }
 
-.be-active-img-box {
+.be-active-img-box, .find-contact-img-box, .work-it-img-box {
   height: 351px;
 
   overflow: hidden;
 }
 
-.be-active-img-box img {
-  width: 100%
+.be-active-img-box img, .find-contact-img-box img, .work-it-img-box img {
+  width: 100%;
 }
 
 
@@ -376,12 +376,15 @@ body {
 /*~~~~~~~~~ FIND CONTACT ~~~~~~~~~*/
 
 .find-contact {
-  position: relative;
+
 }
 
-.find-contact-bg {
-  height: 351px;
-  background: url('../img/find-contact-bg_320.jpg') no-repeat center / cover;
+.find-contact-img-box {
+
+}
+
+.find-contact-img-box img {
+
 }
 
 .find-contact-text {
@@ -393,12 +396,15 @@ body {
 /*~~~~~~~~~~ WORK IT ~~~~~~~~~~~*/
 
 .work-it {
-  position: relative;
+
 }
 
-.work-it-bg {
-  height: 351px;
-  background: url('../img/work-it_320.jpg') no-repeat center / cover;
+.work-it-img-box {
+
+}
+
+.work-it-img-box img {
+
 }
 
 .work-it-text {
@@ -693,7 +699,7 @@ body {
     height: 584px;
   }
 
-  .be-active-img-box img {
+  .be-active-img-box img, .find-contact-img-box img, .work-it-img-box img {
     width: auto;
   }
 
