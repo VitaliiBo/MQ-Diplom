@@ -341,7 +341,7 @@ body {
   align-items: center;
 
   position: absolute;
-  top: -85px;
+  top: -79px;
   width: 70px;
   height: 70px;
   background-color: #5e42b0;
@@ -349,6 +349,7 @@ body {
   font-size: 14px;
   font-weight: bold;
   color: #fff;
+  z-index: 999;
 }
 
 .be-active-title span::after , .find-contact-title span::after , .work-it-title span::after {
@@ -841,7 +842,9 @@ body {
   }
 
   .athlets-title h2 {
-    min-width: 700px;
+  /*
+  min-width: 700px;
+*/
   }
 
    .connection-box, .collaboration-box, .growth-box, .players-growth-box {
@@ -866,7 +869,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    margin: 0 922px 0 auto;
+    margin: 0 50% 0 auto;
 
     transition: 1s;
   }
@@ -997,6 +1000,7 @@ body {
 
     .footer-app-logo, .footer-title {
       margin: 0;
+      min-width: 130px;
     }
 
     .footer-title {
@@ -1004,6 +1008,7 @@ body {
       margin-left: 30px;
       margin-top: 10px;
       line-height: 60px;
+      min-width: 704px;
     }
 
     .footer-title p {
@@ -1028,13 +1033,15 @@ body {
     margin: 0 auto;
   }
 
-  .athlets .connection-title, .athlets .collaboration-title, .athlets .growth-title {
+  .athlets .connection-title, .athlets .collaboration-title, .athlets .growth-title, .athlets-title h2 {
     max-width: 700px;
+    width: 50%;
     margin-left: auto;
   }
 
   .connection-text, .collaboration-text, .growth-text, .players-growth-text {
     font-size: 18px;
+    width: 50%;
     max-width: 700px;
   }
 
